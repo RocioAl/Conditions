@@ -1,0 +1,111 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+@media screen and (min-width:576px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        grid-template-rows: 100vh;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        grid-template-rows: 100vh;
+    }
+}
+
+.section {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+@media screen and (min-width:576px) {
+    .grid_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center
+    }
+}
+
+@media screen and (min-width:992px) {
+    .grid_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center
+    }
+}
+
+.grid_item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+}
+
+.grid_item input {
+    margin-bottom: 11px;
+}
+
+@media screen and (min-width:576px) {
+    .grid_item input {
+        margin-top: 7px;
+        margin-bottom: 0%;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .grid_item input {
+        margin-top: 7px;
+        margin-bottom: 0%;
+    }
+}
+
+.grid_item img {
+    width: 100%;
+    height: 200px;
+}
+
+.pagination {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center
+}
+
+.section a {
+    text-decoration: none;
+    padding-top: 10px;
+    margin: 1px;
+    color: #729e2e;
+    font-weight: bolder;
+}
+
+.grid_container select {
+    padding: 5px;
+    background-color: buttonface;
+    border-radius: 5px;
+}

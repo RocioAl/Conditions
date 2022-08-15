@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío Parte 3</title>
+    <link rel="icon" type="image/png" href="assets/favicon/icono.png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="section">
+            <h2>Ingresa el password</h2>
+            <div class="grid_container">
+                <select name ="" id ="select_one">
+                    <option value = "3">3</option>
+                    <option value = "1">1</option>
+                    <option value = "2">2</option>
+                    <option value = "4">4</option>
+                    <option value = "5">5</option>
+                    <option value = "6">6</option>
+                    <option value = "7">7</option>
+                    <option value = "8">8</option>
+                    <option value = "9">9</option>
+                </select>
+                <select name ="" id ="select_two">
+                    <option value = "5">5</option>
+                    <option value = "1">1</option>
+                    <option value = "2">2</option>
+                    <option value = "3">3</option>
+                    <option value = "4">4</option>
+                    <option value = "6">6</option>
+                    <option value = "7">7</option>
+                    <option value = "8">8</option>
+                    <option value = "9">9</option>
+                </select>
+                <select name ="" id="select_three">
+                    <option value = "3">3</option>
+                    <option value = "1">1</option>
+                    <option value = "2">2</option>
+                    <option value = "4">4</option>
+                    <option value = "5">5</option>
+                    <option value = "6">6</option>
+                    <option value = "7">7</option>
+                    <option value = "8">8</option>
+                    <option value = "9">9</option>
+                </select>
+
+            </div>
+            <p id="password_message"> </p>
+            <button onclick="
+             let select_one = document.querySelector('#select_one')
+             let select_two = document.querySelector('#select_two')
+             let select_three = document.querySelector('#select_three')
+             let correct_password = select_one.value + select_two.value + select_three.value
+             let password_message = document.querySelector('#password_message')
+
+             if (correct_password === '911') {
+                 password_message.innerHTML='Password 1 correcto'
+             } else if(correct_password === '714') {
+                 password_message.innerHTML ='Password 2 correcto'
+             }else{
+                 password_message.innerHTML ='Password incorrecto'
+             }"> Ingresar</button>
+             
+            <a href="./Part_1.html" target="_blank" rel="noreferrer noopener">Anterior</a>
+        </div>
+    </div>
+</body>
+
+</html>
